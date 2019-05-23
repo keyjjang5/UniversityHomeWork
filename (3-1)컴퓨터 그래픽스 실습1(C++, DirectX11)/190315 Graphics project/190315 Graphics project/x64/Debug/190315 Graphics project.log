@@ -1,0 +1,14 @@
+﻿  Main.cpp
+c:\users\keyjj\documents\github\seunghoonjung\(3-1)컴퓨터 그래픽스 실습(1) 프로젝트\190315 graphics project\190315 graphics project\main.cpp(18): error C2440: '=': 'const char [11]'에서 'LPCWSTR'(으)로 변환할 수 없습니다.
+  c:\users\keyjj\documents\github\seunghoonjung\(3-1)컴퓨터 그래픽스 실습(1) 프로젝트\190315 graphics project\190315 graphics project\main.cpp(18): note: 가리킨 형식이 관련이 없습니다. 변환하려면 reinterpret_cast, C 스타일 캐스트 또는 함수 스타일 캐스트가 필요합니다.
+c:\users\keyjj\documents\github\seunghoonjung\(3-1)컴퓨터 그래픽스 실습(1) 프로젝트\190315 graphics project\190315 graphics project\main.cpp(19): error C2664: 'HWND CreateWindowExW(DWORD,LPCWSTR,LPCWSTR,DWORD,int,int,int,int,HWND,HMENU,HINSTANCE,LPVOID)': 인수 2을(를) 'const char [11]'에서 'LPCWSTR'(으)로 변환할 수 없습니다.
+  c:\users\keyjj\documents\github\seunghoonjung\(3-1)컴퓨터 그래픽스 실습(1) 프로젝트\190315 graphics project\190315 graphics project\main.cpp(31): note: 가리킨 형식이 관련이 없습니다. 변환하려면 reinterpret_cast, C 스타일 캐스트 또는 함수 스타일 캐스트가 필요합니다.
+c:\users\keyjj\documents\github\seunghoonjung\(3-1)컴퓨터 그래픽스 실습(1) 프로젝트\190315 graphics project\190315 graphics project\main.cpp(39): warning C4244: 'return': 'WPARAM'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+c:\users\keyjj\documents\github\seunghoonjung\(3-1)컴퓨터 그래픽스 실습(1) 프로젝트\190315 graphics project\190315 graphics project\main.cpp(45): error C2556: 'LRESULT WndProc(HWND,UINT,WPARAM,LPARAM)': 오버로드된 함수가 'LONG WndProc(HWND,UINT,WPARAM,LPARAM)'과(와) 반환 형식만 다릅니다.
+  c:\users\keyjj\documents\github\seunghoonjung\(3-1)컴퓨터 그래픽스 실습(1) 프로젝트\190315 graphics project\190315 graphics project\main.cpp(2): note: 'WndProc' 선언을 참조하십시오.
+c:\users\keyjj\documents\github\seunghoonjung\(3-1)컴퓨터 그래픽스 실습(1) 프로젝트\190315 graphics project\190315 graphics project\main.cpp(44): error C2371: 'WndProc': 재정의. 기본 형식이 다릅니다.
+  c:\users\keyjj\documents\github\seunghoonjung\(3-1)컴퓨터 그래픽스 실습(1) 프로젝트\190315 graphics project\190315 graphics project\main.cpp(2): note: 'WndProc' 선언을 참조하십시오.
+c:\users\keyjj\documents\github\seunghoonjung\(3-1)컴퓨터 그래픽스 실습(1) 프로젝트\190315 graphics project\190315 graphics project\main.cpp(55): error C2664: 'int DrawTextW(HDC,LPCWSTR,int,LPRECT,UINT)': 인수 2을(를) 'const char [15]'에서 'LPCWSTR'(으)로 변환할 수 없습니다.
+  c:\users\keyjj\documents\github\seunghoonjung\(3-1)컴퓨터 그래픽스 실습(1) 프로젝트\190315 graphics project\190315 graphics project\main.cpp(56): note: 가리킨 형식이 관련이 없습니다. 변환하려면 reinterpret_cast, C 스타일 캐스트 또는 함수 스타일 캐스트가 필요합니다.
+c:\users\keyjj\documents\github\seunghoonjung\(3-1)컴퓨터 그래픽스 실습(1) 프로젝트\190315 graphics project\190315 graphics project\main.cpp(62): error C2664: 'int MessageBoxW(HWND,LPCWSTR,LPCWSTR,UINT)': 인수 2을(를) 'const char [5]'에서 'LPCWSTR'(으)로 변환할 수 없습니다.
+  c:\users\keyjj\documents\github\seunghoonjung\(3-1)컴퓨터 그래픽스 실습(1) 프로젝트\190315 graphics project\190315 graphics project\main.cpp(62): note: 가리킨 형식이 관련이 없습니다. 변환하려면 reinterpret_cast, C 스타일 캐스트 또는 함수 스타일 캐스트가 필요합니다.

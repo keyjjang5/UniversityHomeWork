@@ -1,0 +1,10 @@
+<script> ~ </script>로 Js사용
+어떤 정보를 화면에 표시할때 document.write()사용
+	document.write("Hello world");
+	document.write(10+10); >> php와 마찬가지로 20이 표시됨. 하지만 웹페이지에 가서 로그를 보게되면 다르게 나타난다.
+php는 결과만이 나타나지만 Js는 스크립트 전체가 나타나게된다.
+Js는 ""와 ''둘 모두 문자열로 인식
+
+prompt(""); : 창을 띄우게 됨 그창에 있는 입력창에 입력을 하는 것이 password에 들어가짐
+
+list = new Array("one", "two", "three");

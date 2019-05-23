@@ -1,0 +1,15 @@
+﻿TCPServer.obj : error LNK2005: "public: __thiscall TCPServer::TCPServer(void)" (??0TCPServer@@QAE@XZ)이(가) Main.obj에 이미 정의되어 있습니다.
+TCPServer.obj : error LNK2005: "public: void __thiscall TCPServer::Accept(void)" (?Accept@TCPServer@@QAEXXZ)이(가) Main.obj에 이미 정의되어 있습니다.
+TCPServer.obj : error LNK2005: "public: void __thiscall TCPServer::Bind(void)" (?Bind@TCPServer@@QAEXXZ)이(가) Main.obj에 이미 정의되어 있습니다.
+TCPServer.obj : error LNK2005: "public: void __thiscall TCPServer::ChangeShare(int)" (?ChangeShare@TCPServer@@QAEXH@Z)이(가) Main.obj에 이미 정의되어 있습니다.
+TCPServer.obj : error LNK2005: "public: void __thiscall TCPServer::End(void)" (?End@TCPServer@@QAEXXZ)이(가) Main.obj에 이미 정의되어 있습니다.
+TCPServer.obj : error LNK2005: "public: int __thiscall TCPServer::Initialize(void)" (?Initialize@TCPServer@@QAEHXZ)이(가) Main.obj에 이미 정의되어 있습니다.
+TCPServer.obj : error LNK2005: "public: void __thiscall TCPServer::Listen(void)" (?Listen@TCPServer@@QAEXXZ)이(가) Main.obj에 이미 정의되어 있습니다.
+TCPServer.obj : error LNK2005: "public: void __thiscall TCPServer::MCreateThread(unsigned long (__stdcall*)(void *))" (?MCreateThread@TCPServer@@QAEXP6GKPAX@Z@Z)이(가) Main.obj에 이미 정의되어 있습니다.
+TCPServer.obj : error LNK2005: "public: void __thiscall TCPServer::Print(void)" (?Print@TCPServer@@QAEXXZ)이(가) Main.obj에 이미 정의되어 있습니다.
+TCPServer.obj : error LNK2005: "public: static unsigned long __stdcall TCPServer::ProcessClient(void *)" (?ProcessClient@TCPServer@@SGKPAX@Z)이(가) Main.obj에 이미 정의되어 있습니다.
+TCPServer.obj : error LNK2005: "public: void __thiscall TCPServer::Socket(void)" (?Socket@TCPServer@@QAEXXZ)이(가) Main.obj에 이미 정의되어 있습니다.
+TCPServer.obj : error LNK2005: "public: void __thiscall TCPServer::SwitchShare(unsigned int)" (?SwitchShare@TCPServer@@QAEXI@Z)이(가) Main.obj에 이미 정의되어 있습니다.
+TCPServer.obj : error LNK2005: "public: static void __cdecl TCPServer::err_display(char *)" (?err_display@TCPServer@@SAXPAD@Z)이(가) Main.obj에 이미 정의되어 있습니다.
+TCPServer.obj : error LNK2005: "public: static void __cdecl TCPServer::err_quit(char *)" (?err_quit@TCPServer@@SAXPAD@Z)이(가) Main.obj에 이미 정의되어 있습니다.
+C:\Users\keyjj\Documents\GitHub\SeunghoonJung\(3-1)게임서버 실습(1) 프로젝트\190519 MultiThreadShare\Debug\190519 MultiThreadShare.exe : fatal error LNK1169: 여러 번 정의된 기호가 있습니다.

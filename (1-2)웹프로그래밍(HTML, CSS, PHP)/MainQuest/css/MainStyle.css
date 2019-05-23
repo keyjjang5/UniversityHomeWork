@@ -1,0 +1,214 @@
+/*Main1의 스타일 시트입니다.*/
+
+body
+{
+    margin : 0%;
+}
+.container
+{
+    display : flex;
+    flex-direction :column;
+    justify-content : flex-start;
+    align-items : center;
+    align-content : flex-start;
+    
+}
+.itemTopBar
+{
+    position : fixed;
+    display : flex;
+    flex-direction : row;
+    justify-content : left;
+    align-items : center;
+    width : 1280px;
+    height : 50px;
+    background-color : rgba(98,98,102,1);
+    border-bottom-left-radius : 10px;
+    border-bottom-right-radius : 10px;
+}
+.itemInBar
+{
+    position : static;
+    width : 200px;
+    height : 40px;
+    margin : 5px;
+    text-align : center;
+    color : black;
+}
+.itemSubMenu1
+{
+    position : static;
+    display : none;
+    border-radius :10px;
+}
+.itemSubMenu2
+{
+    position : static;
+    display : none;
+    width : 160px;
+    height:70px;
+    margin:15px 20px;
+    color :rgba(243,243,243,1);
+    background-color:rgba(2,3,4,1);
+    border-radius:10px;
+}
+.itemAnc
+{
+    padding :6px;
+    text-decoration:none;
+    color :white;
+    font-size:25px
+}
+.itemIndex
+{
+    display:flex;
+    justify-content : center;
+    align-items : center;
+    flex-wrap :wrap;
+    
+}
+.itemInBar:hover .itemSubMenu1
+{
+    display : inline-block;
+    background-color : white;
+}
+.itemInBar:hover .itemSubMenu2
+{
+    display : inline-block;
+    
+}
+.itemInBar:active .itemSubMenu1
+{
+    display : inline-block;
+    background-color : white;
+}
+.itemSubMenu2:hover
+{
+    background-color : rgba(200,200,200,1);
+    cursor : pointer;
+}
+.itemContainer
+{
+    position : static;
+    display : flex;
+    flex-direction : row;
+    justify-content : flex-start;
+    flex-wrap : wrap;
+    align-items : flex-start;
+    align-content : flex-start;
+    width : 1280px;   
+    height: auto;
+    min-height : 1000px;
+    background-color : rgba(98,98,102,1);
+    border-radius : 10px;
+
+}
+.itemBlock
+{
+    display : inline-block;
+    width : 500px;
+    height : 500px;
+    padding : 0px;
+    border : solid rgba(149,129,114,1) 5px;
+    border-radius :10px;
+    margin : 65px;
+    background-color : rgba(149,129,114,1);
+    text-align : center;
+}
+.writeContainer
+{
+    position : static;
+    display : flex;
+    flex-direction : column;
+    justify-content : flex-start;
+    flex-wrap : wrap;
+    align-items : center;
+    align-content : flex-start;
+    width : 1280px;   
+    height: auto;
+    border-radius : 10px;
+    background-color : rgba(243,243,243,1);
+    border-color : rgba(221,221,221,1);
+
+}
+.writeBlock
+{
+    display : inline-block;
+    padding : 0px;
+    
+    
+    text-align : left;
+    color : black;
+}
+
+.num
+{
+    display:inline-block;
+    width:31px;
+    height:18px;
+    padding:8px 12px;
+    font-size :12px;
+    text-align:center;
+    border:solid black 1px;
+    border-left:0px;
+    border-right:0px;
+}
+.cate
+{
+    display:inline-block;
+    width:31px;
+    height:18px;
+    padding:8px 12px;
+    font-size :12px;
+    text-align:center;
+    border:solid black 1px;
+    border-left:0px;
+    border-right:0px;
+}
+.title
+{
+    display:inline-block;
+    width:845px;
+    height:18px;
+    padding:8px 12px;
+    font-size :12px;
+    text-align:center;
+    border:solid black 1px;
+    border-left:0px;
+    border-right:0px;
+}
+.author
+{
+    display:inline-block;
+    width:114px;
+    height:18px;
+    padding:8px 12px;
+    font-size :12px;
+    text-align:center;
+    border:solid black 1px;
+    border-left:0px;
+    border-right:0px;
+}
+.date
+{
+    display:inline-block;
+    width:79px;
+    height:18px;
+    padding:8px 12px;
+    font-size :12px;
+    text-align:center;
+    border:solid black 1px;
+    border-left:0px;
+    border-right:0px;
+}
+.bar
+{
+    display:flex;
+    flex-direction : row;
+    justify-content : flex-start;
+    align-items : flex-start;
+    align-content : flex-start;
+    width:1220px;
+    height:35px;
+
+}

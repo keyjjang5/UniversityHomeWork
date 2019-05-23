@@ -1,0 +1,112 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <meta charset = "utf-8">
+        <style>
+            body
+            {
+                margin : 0%;
+            }
+            .container
+            {   
+                display : flex;
+                justify-content : center;
+                width : 100%;
+                height : 55px;
+            }
+            .itemTopBar
+            {
+                position : fixed;
+                display : flex;
+                flex-direction : row;
+                justify-content : center;
+                align-items : center;
+                width : 1280px;
+                height : 50px;
+                background-color : rgba(200,200,200,0.5);
+                
+
+            }
+            .itemInBar
+            {
+                position : fixed;
+                width : 200px;
+                height : 40px;
+                margin : 5px;
+                background-color : darkred;
+                color : black;
+            }
+            .itemContainer
+            {
+                position : static;
+                display : flex;
+                flex-direction : row;
+                justify-content : center;
+                flex-wrap : wrap;
+                align-items : center;
+                align-content : space-around;
+                width : 1280px;   
+                height : 1280px;
+                background-color : black;
+
+            }
+            .itemBlock
+            {
+                display : inline-block;
+                width : 500px;
+                height : 500px;
+                border : 20px;
+                border-color : white;
+                background-color : darkred;
+                text-align : center;
+            }
+        </style>
+
+    </head>
+    <body>
+        <header  class = "container">
+            <div class = "itemTopBar">
+                <div class = "itemInBar">
+                    테스트중입니다.
+                </div>
+                <div class = "itemInBar">
+                    확인이 필요하네요
+                    <br/>
+                    정상 작동 합니다
+                </div>
+                <div class = "itemInBar">
+                    왜 안되지?
+                </div>
+            </div>
+        </header>
+        <nav>
+
+        </nav>
+        <section class = "container" style = "height : 1300px;">
+            <div class = "itemContainer">
+                <div class = "itemBlock">
+                    block1
+                </div>
+                <div class = "itemBlock">
+                    block2
+                </div>
+                <div class = "itemBlock">
+                    block3
+                </div>
+                <div class = "itemBlock">
+                    block4
+                </div>
+            </div>
+        </section>
+        <aside>
+
+
+        </aside>
+        <footer>
+
+
+        </footer>
+    </body>
+
+
+</html>
