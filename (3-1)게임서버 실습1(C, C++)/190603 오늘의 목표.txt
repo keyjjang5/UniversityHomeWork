@@ -1,0 +1,75 @@
+[그래픽스]
+1. 그래픽스 과제 모델 출력
+2. 그래픽스 과제 라이팅
+
+"../data/convert/book.obj", 
+"../data/convert/carpet.obj", 
+"../data/convert/ceilinglight.obj", 	//없음
+circle, 
+"../data/convert/circletable.obj", 	//없음
+"../data/convert/cushion1.obj", 
+"../data/convert/cushion2.obj", 
+"../data/convert/cushion3.obj", 
+"../data/convert/door.obj", 		//없음
+"../data/convert/ground.obj", 
+"../data/convert/picture.obj", 
+"../data/convert/picturecase.obj", 
+"../data/convert/sofa1.obj", 
+"../data/convert/sofa2.obj", 
+"../data/convert/stair.obj", 		//없음
+"../data/convert/stairwall.obj", 	//없음
+"../data/convert/table.obj", 		//없음
+"../data/convert/tv.obj", 
+"../data/convert/tvcase.obj", 
+"../data/convert/tvwall.obj", 
+"../data/convert/wall.obj"		//없음
+
+
+"book.obj",		c
+"carpet.obj",		c
+"ceilinglight.obj",		c
+"circletable.obj",		c
+"cushion1.obj",		c
+"cushion2.obj",		c
+"cushion3.obj",		c
+//"door.obj",
+"ground.obj",		c
+"picture.obj",		c
+"picturecase.obj",		c
+"sofa1.obj",		c
+"sofa2.obj",		c
+//"../data/convert/stair.obj",
+//"../data/convert/stairwall.obj",
+"table.obj",		c
+"tv.obj",			c
+"tvcase.obj",		c
+"tvwall.obj",		c
+"wall.obj" 		c
+
+[서버]
+1. 로그인 서버
+2. 게임 서버
+
+
+Final Project : 로그인 서버
+Game Server : 게임 서버
+
+Final Client : 클라이언트
+
+1. 클라이언트 -> 로그인 서버 : loginPacket
+
+if(로그인 성공 시)
+2. 로그인 서버 -> 게임 서버 : loginAccept
+3. 로그인 서버 -> 클라이언트 : loginConfirm(true)
+else(로그인 실패 시)
+2. 로그인 서버 -> 클라이언트 : loginConfirm(false)
+
+while(로그아웃 하지 않으면)
+if(채팅모드라면)
+4. 클라이언트 -> 게임 서버 : chatPacket
+5. 게임 서버 -> (브로드캐스트)모든 클라이언트 : broadChat
+if(일반모드라면)
+4. 클라이언트 -> 게임 서버 : gamePacket
+5. 게임 서버 -> (브로드캐스트)모든 클라이언트 : broadGame
+
+6. 로그아웃

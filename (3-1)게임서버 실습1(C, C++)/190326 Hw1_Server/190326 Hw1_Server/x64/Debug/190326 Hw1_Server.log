@@ -1,0 +1,4 @@
+﻿  TCPServer.cpp
+c:\users\keyjj\documents\github\universityhomework\(3-1)게임서버 실습1(c, c++)\190326 hw1_server\190326 hw1_server\tcpserver.cpp(115): warning C4101: 'buf' :참조되지 않은 지역 변수입니다.
+  190326 Hw1_Server.vcxproj -> C:\Users\keyjj\Documents\GitHub\UniversityHomeWork\(3-1)게임서버 실습1(C, C++)\190326 Hw1_Server\x64\Debug\190326 Hw1_Server.exe
+  190326 Hw1_Server.vcxproj -> C:\Users\keyjj\Documents\GitHub\UniversityHomeWork\(3-1)게임서버 실습1(C, C++)\190326 Hw1_Server\x64\Debug\190326 Hw1_Server.pdb (Full PDB)

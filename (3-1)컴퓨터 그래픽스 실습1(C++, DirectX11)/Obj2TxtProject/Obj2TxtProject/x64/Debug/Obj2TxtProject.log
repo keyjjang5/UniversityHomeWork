@@ -1,3 +1,3 @@
 ﻿  main.cpp
-c:\users\keyjj\documents\github\seunghoonjung\(3-1)컴퓨터 그래픽스 실습(1) 프로젝트\obj2txtproject\obj2txtproject\main.cpp(290): warning C4715: 'LoadDataStructures': 모든 제어 경로에서 값을 반환하지는 않습니다.
-  Obj2TxtProject.vcxproj -> C:\Users\keyjj\Documents\GitHub\SeunghoonJung\(3-1)컴퓨터 그래픽스 실습(1) 프로젝트\Obj2TxtProject\x64\Debug\Obj2TxtProject.exe
+c:\users\keyjj\documents\github\universityhomework\(3-1)컴퓨터 그래픽스 실습1(c++, directx11)\obj2txtproject\obj2txtproject\main.cpp(290): warning C4715: 'LoadDataStructures': 모든 제어 경로에서 값을 반환하지는 않습니다.
+  Obj2TxtProject.vcxproj -> C:\Users\keyjj\Documents\GitHub\UniversityHomeWork\(3-1)컴퓨터 그래픽스 실습1(C++, DirectX11)\Obj2TxtProject\x64\Debug\Obj2TxtProject.exe
