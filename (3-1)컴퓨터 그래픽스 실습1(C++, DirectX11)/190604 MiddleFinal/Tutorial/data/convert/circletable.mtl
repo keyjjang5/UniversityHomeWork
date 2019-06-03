@@ -1,0 +1,120 @@
+# 3ds Max Wavefront OBJ Exporter v0.97b - (c)2007 guruware
+# File Created: 03.06.2019 16:26:47
+
+newmtl wire_200121175
+	Ns 32
+	d 1
+	Tr 0
+	Tf 1 1 1
+	illum 2
+	Ka 0.7843 0.4745 0.6863
+	Kd 0.7843 0.4745 0.6863
+	Ks 0.3500 0.3500 0.3500
+
+newmtl wire_218154132
+	Ns 32
+	d 1
+	Tr 0
+	Tf 1 1 1
+	illum 2
+	Ka 0.8549 0.6039 0.5176
+	Kd 0.8549 0.6039 0.5176
+	Ks 0.3500 0.3500 0.3500
+
+newmtl Material__239
+	Ns 10.0000
+	Ni 1.5000
+	d 1.0000
+	Tr 0.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 0.5880 0.5880 0.5880
+	Kd 0.5880 0.5880 0.5880
+	Ks 0.0000 0.0000 0.0000
+	Ke 0.0000 0.0000 0.0000
+	map_Ka C:\Users\dhaltnr\Desktop\Model\Users\FNS\Downloads\table t@\Impero Bianco.jpg
+	map_Kd C:\Users\dhaltnr\Desktop\Model\Users\FNS\Downloads\table t@\Impero Bianco.jpg
+
+newmtl wire_217143236
+	Ns 32
+	d 1
+	Tr 0
+	Tf 1 1 1
+	illum 2
+	Ka 0.8510 0.5608 0.9255
+	Kd 0.8510 0.5608 0.9255
+	Ks 0.3500 0.3500 0.3500
+
+newmtl wire_237174144
+	Ns 32
+	d 1
+	Tr 0
+	Tf 1 1 1
+	illum 2
+	Ka 0.9294 0.6824 0.5647
+	Kd 0.9294 0.6824 0.5647
+	Ks 0.3500 0.3500 0.3500
+
+newmtl wire_122202167
+	Ns 32
+	d 1
+	Tr 0
+	Tf 1 1 1
+	illum 2
+	Ka 0.4784 0.7922 0.6549
+	Kd 0.4784 0.7922 0.6549
+	Ks 0.3500 0.3500 0.3500
+
+newmtl wire_139230165
+	Ns 32
+	d 1
+	Tr 0
+	Tf 1 1 1
+	illum 2
+	Ka 0.5451 0.9020 0.6471
+	Kd 0.5451 0.9020 0.6471
+	Ks 0.3500 0.3500 0.3500
+
+newmtl wire_136225196
+	Ns 32
+	d 1
+	Tr 0
+	Tf 1 1 1
+	illum 2
+	Ka 0.5333 0.8824 0.7686
+	Kd 0.5333 0.8824 0.7686
+	Ks 0.3500 0.3500 0.3500
+
+newmtl wire_161137227
+	Ns 32
+	d 1
+	Tr 0
+	Tf 1 1 1
+	illum 2
+	Ka 0.6314 0.5373 0.8902
+	Kd 0.6314 0.5373 0.8902
+	Ks 0.3500 0.3500 0.3500
+
+newmtl wire_221201134
+	Ns 32
+	d 1
+	Tr 0
+	Tf 1 1 1
+	illum 2
+	Ka 0.8667 0.7882 0.5255
+	Kd 0.8667 0.7882 0.5255
+	Ks 0.3500 0.3500 0.3500
+
+newmtl Material__238
+	Ns 10.0000
+	Ni 1.5000
+	d 1.0000
+	Tr 0.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 0.5880 0.5880 0.5880
+	Kd 0.5880 0.5880 0.5880
+	Ks 0.0000 0.0000 0.0000
+	Ke 0.0000 0.0000 0.0000
+	map_Ka C:\Users\dhaltnr\Desktop\Model\Users\FNS\Downloads\table t@\Impero Bianco.jpg
+	map_Kd C:\Users\dhaltnr\Desktop\Model\Users\FNS\Downloads\table t@\Impero Bianco.jpg

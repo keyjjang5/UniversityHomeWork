@@ -1,0 +1,212 @@
+# 3ds Max Wavefront OBJ Exporter v0.97b - (c)2007 guruware
+# File Created: 03.06.2019 16:37:10
+
+newmtl Material__274
+	Ns 10.0000
+	Ni 1.5000
+	d 1.0000
+	Tr 0.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 0.5880 0.5880 0.5880
+	Kd 0.5880 0.5880 0.5880
+	Ks 0.0000 0.0000 0.0000
+	Ke 0.0000 0.0000 0.0000
+	map_Ka C:\Users\dhaltnr\Desktop\Model\Max project\BEDROOM1\IN\645858422.jpg
+	map_Kd C:\Users\dhaltnr\Desktop\Model\Max project\BEDROOM1\IN\645858422.jpg
+
+newmtl Material__273
+	Ns 10.0000
+	Ni 1.5000
+	d 1.0000
+	Tr 0.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 0.5880 0.5880 0.5880
+	Kd 0.5880 0.5880 0.5880
+	Ks 0.0000 0.0000 0.0000
+	Ke 0.0000 0.0000 0.0000
+	map_Ka C:\Users\dhaltnr\Desktop\Model\Max project\BEDROOM1\IN\645858422.jpg
+	map_Kd C:\Users\dhaltnr\Desktop\Model\Max project\BEDROOM1\IN\645858422.jpg
+
+newmtl Material__272
+	Ns 10.0000
+	Ni 1.5000
+	d 1.0000
+	Tr 0.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 0.5880 0.5880 0.5880
+	Kd 0.5880 0.5880 0.5880
+	Ks 0.0000 0.0000 0.0000
+	Ke 0.0000 0.0000 0.0000
+	map_Ka C:\Users\dhaltnr\Desktop\Model\Max project\BEDROOM1\IN\645858422.jpg
+	map_Kd C:\Users\dhaltnr\Desktop\Model\Max project\BEDROOM1\IN\645858422.jpg
+
+newmtl Material__271
+	Ns 10.0000
+	Ni 1.5000
+	d 1.0000
+	Tr 0.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 0.5880 0.5880 0.5880
+	Kd 0.5880 0.5880 0.5880
+	Ks 0.0000 0.0000 0.0000
+	Ke 0.0000 0.0000 0.0000
+	map_Ka C:\Users\dhaltnr\Desktop\Model\Max project\BEDROOM1\IN\645858422.jpg
+	map_Kd C:\Users\dhaltnr\Desktop\Model\Max project\BEDROOM1\IN\645858422.jpg
+
+newmtl Material__270
+	Ns 10.0000
+	Ni 1.5000
+	d 1.0000
+	Tr 0.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 0.5880 0.5880 0.5880
+	Kd 0.5880 0.5880 0.5880
+	Ks 0.0000 0.0000 0.0000
+	Ke 0.0000 0.0000 0.0000
+	map_Ka C:\Users\dhaltnr\Desktop\Model\Max project\BEDROOM1\IN\645858422.jpg
+	map_Kd C:\Users\dhaltnr\Desktop\Model\Max project\BEDROOM1\IN\645858422.jpg
+
+newmtl Material__269
+	Ns 10.0000
+	Ni 1.5000
+	d 1.0000
+	Tr 0.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 0.5880 0.5880 0.5880
+	Kd 0.5880 0.5880 0.5880
+	Ks 0.0000 0.0000 0.0000
+	Ke 0.0000 0.0000 0.0000
+	map_Ka C:\Users\dhaltnr\Desktop\Model\Max project\BEDROOM1\IN\645858422.jpg
+	map_Kd C:\Users\dhaltnr\Desktop\Model\Max project\BEDROOM1\IN\645858422.jpg
+
+newmtl Material__268
+	Ns 10.0000
+	Ni 1.5000
+	d 1.0000
+	Tr 0.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 0.5880 0.5880 0.5880
+	Kd 0.5880 0.5880 0.5880
+	Ks 0.0000 0.0000 0.0000
+	Ke 0.0000 0.0000 0.0000
+	map_Ka C:\Users\dhaltnr\Desktop\Model\Max project\BEDROOM1\IN\645858422.jpg
+	map_Kd C:\Users\dhaltnr\Desktop\Model\Max project\BEDROOM1\IN\645858422.jpg
+
+newmtl Material__267
+	Ns 10.0000
+	Ni 1.5000
+	d 1.0000
+	Tr 0.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 0.5880 0.5880 0.5880
+	Kd 0.5880 0.5880 0.5880
+	Ks 0.0000 0.0000 0.0000
+	Ke 0.0000 0.0000 0.0000
+	map_Ka C:\Users\dhaltnr\Desktop\Model\Max project\BEDROOM1\IN\645858422.jpg
+	map_Kd C:\Users\dhaltnr\Desktop\Model\Max project\BEDROOM1\IN\645858422.jpg
+
+newmtl Material__280
+	Ns 10.0000
+	Ni 1.5000
+	d 1.0000
+	Tr 0.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 0.5880 0.5880 0.5880
+	Kd 0.5880 0.5880 0.5880
+	Ks 0.0000 0.0000 0.0000
+	Ke 0.0000 0.0000 0.0000
+	map_Ka C:\Users\dhaltnr\Desktop\Model\Max project\BEDROOM1\IN\645858422.jpg
+	map_Kd C:\Users\dhaltnr\Desktop\Model\Max project\BEDROOM1\IN\645858422.jpg
+
+newmtl Material__279
+	Ns 10.0000
+	Ni 1.5000
+	d 1.0000
+	Tr 0.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 0.5880 0.5880 0.5880
+	Kd 0.5880 0.5880 0.5880
+	Ks 0.0000 0.0000 0.0000
+	Ke 0.0000 0.0000 0.0000
+	map_Ka C:\Users\dhaltnr\Desktop\Model\Max project\BEDROOM1\IN\645858422.jpg
+	map_Kd C:\Users\dhaltnr\Desktop\Model\Max project\BEDROOM1\IN\645858422.jpg
+
+newmtl Material__278
+	Ns 10.0000
+	Ni 1.5000
+	d 1.0000
+	Tr 0.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 0.5880 0.5880 0.5880
+	Kd 0.5880 0.5880 0.5880
+	Ks 0.0000 0.0000 0.0000
+	Ke 0.0000 0.0000 0.0000
+	map_Ka C:\Users\dhaltnr\Desktop\Model\Max project\BEDROOM1\IN\645858422.jpg
+	map_Kd C:\Users\dhaltnr\Desktop\Model\Max project\BEDROOM1\IN\645858422.jpg
+
+newmtl Material__277
+	Ns 10.0000
+	Ni 1.5000
+	d 1.0000
+	Tr 0.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 0.5880 0.5880 0.5880
+	Kd 0.5880 0.5880 0.5880
+	Ks 0.0000 0.0000 0.0000
+	Ke 0.0000 0.0000 0.0000
+	map_Ka C:\Users\dhaltnr\Desktop\Model\Max project\BEDROOM1\IN\645858422.jpg
+	map_Kd C:\Users\dhaltnr\Desktop\Model\Max project\BEDROOM1\IN\645858422.jpg
+
+newmtl Material__276
+	Ns 10.0000
+	Ni 1.5000
+	d 1.0000
+	Tr 0.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 0.5880 0.5880 0.5880
+	Kd 0.5880 0.5880 0.5880
+	Ks 0.0000 0.0000 0.0000
+	Ke 0.0000 0.0000 0.0000
+	map_Ka C:\Users\dhaltnr\Desktop\Model\Max project\BEDROOM1\IN\645858422.jpg
+	map_Kd C:\Users\dhaltnr\Desktop\Model\Max project\BEDROOM1\IN\645858422.jpg
+
+newmtl Material__281
+	Ns 10.0000
+	Ni 1.5000
+	d 1.0000
+	Tr 0.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 0.5880 0.5880 0.5880
+	Kd 0.5880 0.5880 0.5880
+	Ks 0.0000 0.0000 0.0000
+	Ke 0.0000 0.0000 0.0000
+	map_Ka C:\Users\dhaltnr\Desktop\Model\Max project\BEDROOM1\IN\645858422.jpg
+	map_Kd C:\Users\dhaltnr\Desktop\Model\Max project\BEDROOM1\IN\645858422.jpg
+
+newmtl Material__275
+	Ns 10.0000
+	Ni 1.5000
+	d 1.0000
+	Tr 0.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 0.5880 0.5880 0.5880
+	Kd 0.5880 0.5880 0.5880
+	Ks 0.0000 0.0000 0.0000
+	Ke 0.0000 0.0000 0.0000
+	map_Ka C:\Users\dhaltnr\Desktop\Model\Max project\BEDROOM1\IN\645858422.jpg
+	map_Kd C:\Users\dhaltnr\Desktop\Model\Max project\BEDROOM1\IN\645858422.jpg
