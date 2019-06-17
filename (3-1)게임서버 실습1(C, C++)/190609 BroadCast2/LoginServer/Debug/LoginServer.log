@@ -1,0 +1,9 @@
+﻿  BroadcastSender.cpp
+c:\users\keyjj\documents\github\universityhomework\(3-1)게임서버 실습1(c, c++)\190609 broadcast\loginserver\broadcastsender.cpp(78): warning C4996: 'inet_addr': Use inet_pton() or InetPton() instead or define _WINSOCK_DEPRECATED_NO_WARNINGS to disable deprecated API warnings
+  c:\program files (x86)\windows kits\8.1\include\um\winsock2.h(1850): note: 'inet_addr' 선언을 참조하십시오.
+c:\users\keyjj\documents\github\universityhomework\(3-1)게임서버 실습1(c, c++)\190609 broadcast\loginserver\broadcastsender.cpp(101): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.10240.0\ucrt\string.h(119): note: 'strcpy' 선언을 참조하십시오.
+c:\users\keyjj\documents\github\universityhomework\(3-1)게임서버 실습1(c, c++)\190609 broadcast\loginserver\broadcastsender.cpp(83): warning C4101: 'len' :참조되지 않은 지역 변수입니다.
+c:\users\keyjj\documents\github\universityhomework\(3-1)게임서버 실습1(c, c++)\190609 broadcast\loginserver\broadcastsender.cpp(82): warning C4101: 'buf' :참조되지 않은 지역 변수입니다.
+  LoginServer.vcxproj -> C:\Users\keyjj\Documents\GitHub\UniversityHomeWork\(3-1)게임서버 실습1(C, C++)\190609 BroadCast\Debug\LoginServer.exe
+  LoginServer.vcxproj -> C:\Users\keyjj\Documents\GitHub\UniversityHomeWork\(3-1)게임서버 실습1(C, C++)\190609 BroadCast\Debug\LoginServer.pdb (Full PDB)

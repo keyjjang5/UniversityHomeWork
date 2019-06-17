@@ -17,26 +17,29 @@ int main()
 
 	while (1)
 	{
-		screen.clear();
+		//screen.clear();
 
 		//ÀÔ·ÂºÎ
 		if (_kbhit())
 		{
 			char key = _getch();
-
+			printf("%d\n", key);
 			if (key == 27)
 				break;
 			if (key == -32)
+			{
 				key = _getch();
+				printf("%d\n", key);
+			}
 
 			switch (key)
 			{
 			case('a'): case(75):
-				player.decreasePos();
+				//player.decreasePos();
 				break;
 
 			case('d'): case(77):
-				player.increasePos();
+				//player.increasePos();
 				break;
 
 			/*case(' '):
@@ -45,10 +48,10 @@ int main()
 				break;*/
 			}
 		}
-		screen.replace(player.returnPos(), player.returnShape().length()-1, player.returnShape());
-		screen.replace(enemy.returnPos(), enemy.returnShape().length()-1, enemy.returnShape());
+		//screen.replace(player.returnPos(), player.returnShape().length()-1, player.returnShape());
+		//screen.replace(enemy.returnPos(), enemy.returnShape().length()-1, enemy.returnShape());
 
-		screen.print();
+		//screen.print();
 	}
 	return 0;
 }

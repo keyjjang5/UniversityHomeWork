@@ -6,6 +6,7 @@
 #include "PacketCollection.h"
 
 #define SERVERPORT 9000
+#define GAMESERVERPORT 9100
 #define BUFSIZE    512
 
 // 과제
@@ -102,7 +103,7 @@ bool LoginFromClient(SOCKET& client_sock)
 		ZeroMemory(&serveraddr, sizeof(serveraddr));
 		serveraddr.sin_family = AF_INET;
 		serveraddr.sin_addr.s_addr = inet_addr("127.0.0.1");
-		serveraddr.sin_port = htons(9100);
+		serveraddr.sin_port = htons(GAMESERVERPORT);
 
 		LoginConfirm* confirm = new LoginConfirm;
 		confirm->isLogin = true;
@@ -110,6 +111,30 @@ bool LoginFromClient(SOCKET& client_sock)
 
 		retval = send(sock, (char*)confirm, sizeof(LoginConfirm), 0);
 
+		//// UDP 소켓을 만들고 그것을 통해 게임 서버에게 정보 전달
+		//// socket()
+		//SOCKET udpSock = socket(AF_INET, SOCK_DGRAM, 0);
+		//if (udpSock == INVALID_SOCKET) err_quit("socket()");
+
+		//// 브로드캐스팅 활성화
+		//BOOL bEnable = TRUE;
+		//retval = setsockopt(udpSock, SOL_SOCKET, SO_BROADCAST,
+		//	(char *)&bEnable, sizeof(bEnable));
+		//if (retval == SOCKET_ERROR) err_quit("setsockopt()");
+
+		//// 소켓 주소 구조체 초기화
+		//SOCKADDR_IN remoteaddr;
+		//ZeroMemory(&remoteaddr, sizeof(remoteaddr));
+		//remoteaddr.sin_family = AF_INET;
+		//remoteaddr.sin_addr.s_addr = inet_addr("255.255.255.255"); // 브로드 캐스트 주소
+		//remoteaddr.sin_port = htons(GAMESERVERPORT);
+
+		//// 데이터 보내기
+		//retval = sendto(sock, (char*)sock, sizeof(SOCKET), 0,
+		//	(SOCKADDR *)&remoteaddr, sizeof(remoteaddr));
+		//if (retval == SOCKET_ERROR) {
+		//	err_display("sendto()");
+		//}
 		
 		// 4. 동시에 게임서버에 플레이어 정보를 넘겨준다.
 		// 로그인 - 클라이언트 먼저 확인하고 추가

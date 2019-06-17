@@ -214,8 +214,22 @@ int main(int argc, char *argv[])
 	serveraddr.sin_addr.s_addr = htonl(INADDR_ANY);
 	serveraddr.sin_port = htons(SERVERPORT);
 	retval = bind(listen_sock, (SOCKADDR *)&serveraddr, sizeof(serveraddr));
-	if(retval == SOCKET_ERROR) err_quit("bind()");
+	if (retval == SOCKET_ERROR) err_quit("bind()");
 
+	//// UdpSocket
+	//SOCKET sock = socket(AF_INET, SOCK_DGRAM, 0);
+	//if (sock == INVALID_SOCKET) err_quit("socket()");
+
+	//// udpbind()
+	//SOCKADDR_IN localaddr;
+	//ZeroMemory(&localaddr, sizeof(localaddr));
+	//localaddr.sin_family = AF_INET;
+	//localaddr.sin_addr.s_addr = htonl(INADDR_ANY);
+	//localaddr.sin_port = htons(SERVERPORT);
+	//retval = bind(sock, (SOCKADDR *)&localaddr, sizeof(localaddr));
+	//if (retval == SOCKET_ERROR) err_quit("bind()");
+
+	
 	// listen()
 	retval = listen(listen_sock, SOMAXCONN);
 	if(retval == SOCKET_ERROR) err_quit("listen()");
@@ -225,6 +239,7 @@ int main(int argc, char *argv[])
 	SOCKADDR_IN clientaddr;
 	int addrlen;
 	HANDLE hThread;
+	DWORD threadID;              // 스레드 아이디
 
 	while(1){
 		// accept()
@@ -242,7 +257,7 @@ int main(int argc, char *argv[])
 
 		// 스레드 생성
 		hThread = CreateThread(NULL, 0, ProcessClient,
-			(LPVOID)client_sock, 0, NULL);
+			(LPVOID)client_sock, 0, &threadID);
 		if(hThread == NULL) { closesocket(client_sock); }
 		else { CloseHandle(hThread); }
 	}

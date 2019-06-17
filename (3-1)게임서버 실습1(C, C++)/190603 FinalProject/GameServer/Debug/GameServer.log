@@ -9,7 +9,7 @@ c:\users\keyjj\documents\github\universityhomework\(3-1)게임서버 실습1(c, 
   c:\program files (x86)\windows kits\8.1\include\um\winsock2.h(1868): note: 'inet_ntoa' 선언을 참조하십시오.
 c:\users\keyjj\documents\github\universityhomework\(3-1)게임서버 실습1(c, c++)\190603 finalproject\gameserver\multithreadtcpgameserver.cpp(189): warning C4996: 'inet_ntoa': Use inet_ntop() or InetNtop() instead or define _WINSOCK_DEPRECATED_NO_WARNINGS to disable deprecated API warnings
   c:\program files (x86)\windows kits\8.1\include\um\winsock2.h(1868): note: 'inet_ntoa' 선언을 참조하십시오.
-c:\users\keyjj\documents\github\universityhomework\(3-1)게임서버 실습1(c, c++)\190603 finalproject\gameserver\multithreadtcpgameserver.cpp(240): warning C4996: 'inet_ntoa': Use inet_ntop() or InetNtop() instead or define _WINSOCK_DEPRECATED_NO_WARNINGS to disable deprecated API warnings
+c:\users\keyjj\documents\github\universityhomework\(3-1)게임서버 실습1(c, c++)\190603 finalproject\gameserver\multithreadtcpgameserver.cpp(255): warning C4996: 'inet_ntoa': Use inet_ntop() or InetNtop() instead or define _WINSOCK_DEPRECATED_NO_WARNINGS to disable deprecated API warnings
   c:\program files (x86)\windows kits\8.1\include\um\winsock2.h(1868): note: 'inet_ntoa' 선언을 참조하십시오.
   GameServer.vcxproj -> C:\Users\keyjj\Documents\GitHub\UniversityHomeWork\(3-1)게임서버 실습1(C, C++)\190603 FinalProject\Debug\GameServer.exe
   GameServer.vcxproj -> C:\Users\keyjj\Documents\GitHub\UniversityHomeWork\(3-1)게임서버 실습1(C, C++)\190603 FinalProject\Debug\GameServer.pdb (Full PDB)

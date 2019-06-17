@@ -1,9 +1,4 @@
-﻿  TCPClient.cpp
-c:\users\keyjj\documents\github\universityhomework\(3-1)게임서버 실습1(c, c++)\190603 finalproject\finalclient\tcpclient.cpp(144): warning C4996: 'inet_addr': Use inet_pton() or InetPton() instead or define _WINSOCK_DEPRECATED_NO_WARNINGS to disable deprecated API warnings
-  c:\program files (x86)\windows kits\8.1\include\um\winsock2.h(1850): note: 'inet_addr' 선언을 참조하십시오.
-c:\users\keyjj\documents\github\universityhomework\(3-1)게임서버 실습1(c, c++)\190603 finalproject\finalclient\tcpclient.cpp(160): warning C4996: 'scanf': This function or variable may be unsafe. Consider using scanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
-  c:\program files (x86)\windows kits\10\include\10.0.10240.0\ucrt\stdio.h(1270): note: 'scanf' 선언을 참조하십시오.
-c:\users\keyjj\documents\github\universityhomework\(3-1)게임서버 실습1(c, c++)\190603 finalproject\finalclient\tcpclient.cpp(162): warning C4996: 'scanf': This function or variable may be unsafe. Consider using scanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
-  c:\program files (x86)\windows kits\10\include\10.0.10240.0\ucrt\stdio.h(1270): note: 'scanf' 선언을 참조하십시오.
+﻿  건너뛰고 있습니다... (관련된 변경 내용 없음)
+  TCPClient.cpp
   FinalClient.vcxproj -> C:\Users\keyjj\Documents\GitHub\UniversityHomeWork\(3-1)게임서버 실습1(C, C++)\190603 FinalProject\Debug\FinalClient.exe
   FinalClient.vcxproj -> C:\Users\keyjj\Documents\GitHub\UniversityHomeWork\(3-1)게임서버 실습1(C, C++)\190603 FinalProject\Debug\FinalClient.pdb (Full PDB)
