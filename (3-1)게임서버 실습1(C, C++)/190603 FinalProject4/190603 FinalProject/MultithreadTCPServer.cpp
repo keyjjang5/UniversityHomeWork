@@ -1,9 +1,12 @@
 #pragma comment(lib, "ws2_32")
 #include <winsock2.h>
-#include <stdlib.h>
-#include <stdio.h>
+#include <iostream>
+#include <fstream>
+#include <string>
 #include <time.h>
 #include "PacketCollection.h"
+
+using namespace std;
 
 #define SERVERPORT 9000
 #define GAMESERVERPORT 9100
@@ -16,6 +19,12 @@ int share = 0;
 // 로그인 데이터(추후 파일로 변경)
 char serverUid[20] = "nickname";
 char serverUpass[20] = "server";
+string userId[10];
+string userPass[10];
+
+int number = 0;
+
+void ReadData();
 
 void ChangeShare(int i)
 {
@@ -84,6 +93,7 @@ bool LoginFromClient(SOCKET& client_sock)
 	int retval;
 	char temp[sizeof(LoginPack)];
 	bool isLoop = false;
+	bool isData = false;
 
 	// 1. 클라이언트가 보낸 패킷을 받는다.
 	retval = recv(sock, (char*)temp, sizeof(LoginPack), 0);
@@ -97,7 +107,15 @@ bool LoginFromClient(SOCKET& client_sock)
 	strcpy(upass, tempPack->uPw);
 	
 	// 3. 올바른 로그인 정보를 받았다면 승인메시지를 보낸다.
-	if (strcmp(uid, serverUid) == 0 && strcmp(upass, serverUpass) == 0)
+	for (int i = 0; i < number; i++)
+	{
+		if (strcmp(uid, userId[i].c_str()) == 0 && strcmp(upass, userPass[i].c_str()) == 0)
+		{
+			isData = true;
+			break;
+		}
+	}
+	if (isData)
 	{
 		SOCKADDR_IN serveraddr;
 		ZeroMemory(&serveraddr, sizeof(serveraddr));
@@ -173,8 +191,51 @@ DWORD WINAPI ProcessClient(LPVOID arg)
 	addrlen = sizeof(clientaddr);
 	getpeername(client_sock, (SOCKADDR *)&clientaddr, &addrlen);
 
-	// 과제
-	//SwitchShare(client_sock);
+	// 회원가입 or 로그인 판정
+	retval = recv(client_sock, buf, sizeof(char), 0);
+	if (retval == SOCKET_ERROR) {
+		err_display("recv()");
+	}
+	bool isJoin;
+	isJoin = (bool)buf[0];
+	if (!isJoin)
+	{
+		FILE *fp;
+
+		fp = fopen("UserData.txt", "a");
+
+		// ID 받기
+		retval = recv(client_sock, buf, BUFSIZE, 0);
+		if (retval == SOCKET_ERROR) {
+			err_display("recv()");
+		}
+
+		buf[retval+1] = '\0';
+		printf("신규 생성 ID : %s\n", buf);
+		fprintf(fp, buf);
+		fprintf(fp, " ");
+
+		// PassWord 받기
+		retval = recv(client_sock, buf, BUFSIZE, 0);
+		if (retval == SOCKET_ERROR) {
+			err_display("recv()");
+		}
+
+		buf[retval] = '\0';
+		printf("신규 생성 PassWord : %s\n", buf);
+		fprintf(fp, buf);
+		fprintf(fp, "\n");
+
+		fclose(fp);
+
+		// 회원가입 성공 메시지 보내기
+		isJoin = true;
+		buf[0] = isJoin;
+		send(client_sock, buf, sizeof(char), 0);
+
+		number = 0;
+		ReadData();
+	}
 	
 	// 로그인 확인
 	bool isLoop = false;
@@ -238,10 +299,112 @@ DWORD WINAPI ProcessClient(LPVOID arg)
 	return 0;
 }
 
+void ReadData()
+{
+	bool done = false;
+	ifstream fin;
+	char input;
+	char filename[20] = "UserData.txt";
+
+	int count = 0;
+	
+
+
+	// 로그인 확인용 데이터
+	char tempId[20];
+	char tempPass[20];
+
+
+	fin.open(filename);
+	if (fin.good())
+	{
+		done = true;
+	}
+	else
+	{
+		// If the file does not exist or there was an issue opening it then notify the user and repeat the process.
+		fin.clear();
+		cout << endl;
+		cout << "File " << filename << " could not be opened." << endl << endl;
+	}
+
+	fin.close();
+
+	fin.open(filename);
+	if (fin.fail() == true)
+	{
+		return;
+	}
+
+	fin.get(input);
+	while (!fin.eof())
+	{
+		tempId[count] = input;
+		while (1)
+		{
+			fin.get(input);
+			if (input == ' ')
+			{
+				++count;
+				tempId[count] = '\0';
+				break;
+			}
+			++count;
+
+			tempId[count] = input;
+		}
+		count = 0;
+
+		// 파일에서 유저 패스워드 뽑아내기
+		fin.get(input);
+		tempPass[count] = input;
+		while (1)
+		{
+			fin.get(input);
+			if (input == '\n')
+			{
+				++count;
+
+				tempPass[count] = '\0';
+				break;
+			}
+			++count;
+
+			tempPass[count] = input;
+		}
+		count = 0;
+		if (input == '\n')
+		{
+			userId[number].clear();
+			userId[number].append(tempId);
+			userPass[number].clear();
+			userPass[number].append(tempPass);
+
+			cout << "userId : " << userId[number] << endl;
+			cout << "userPass : " << userPass[number] << endl;
+
+			++number;
+		}
+
+		fin.get(input);
+	}
+}
+
 int main(int argc, char *argv[])
 {
 	// criticalSection
 	InitializeCriticalSection(&cs);
+
+	// 파일 입출력에 사용하는 변수
+	FILE *fp;
+
+	time_t now;
+	time(&now);
+	tm* nowLocal = localtime(&now);
+
+	// 로그인 확인용 데이터
+	ReadData();
+
 
 	int retval;
 
@@ -273,13 +436,6 @@ int main(int argc, char *argv[])
 	int addrlen;
 	HANDLE hThread;
 
-	// 파일 입출력에 사용하는 변수
-	FILE *fp;
-	
-	time_t now;
-	time(&now);
-	tm* nowLocal = localtime(&now);
-
 	while(1){
 		// accept()
 		addrlen = sizeof(clientaddr);
@@ -307,6 +463,9 @@ int main(int argc, char *argv[])
 			inet_ntoa(clientaddr.sin_addr), ntohs(clientaddr.sin_port));
 
 		fclose(fp);
+		
+		// 회원가입 or 로그인 판정
+		
 
 		// 스레드 생성
 		hThread = CreateThread(NULL, 0, ProcessClient,

@@ -206,7 +206,7 @@ int main(int argc, char *argv[])
 
 	myid = rand();
 
-	printf("my ID : %d", myid);
+	printf("my ID : %d\n", myid);
 
 	// connect()
 	SOCKADDR_IN serveraddr;
@@ -221,9 +221,43 @@ int main(int argc, char *argv[])
 	char buf[BUFSIZE+1];
 	int len;
 
-	// 과제
-	// SwitchShare(sock);
+	// 회원가입과 로그인 선택
+	int login = 0;
+	bool isLogin = false;
+	printf("1. 회원가입\n2. 로그인\n");
+	scanf("%d", &login);
+	switch (login)
+	{
+	case(1):
+		isLogin = false;
+		break;
+	case(2):
+		isLogin = true;
+		break;
+	}
 
+	char loginBuf;
+	loginBuf = (char)isLogin;
+	send(sock, &loginBuf, sizeof(char), 0);
+
+	if (!isLogin)
+	{
+		char newId[20];
+		char newPass[20];
+		printf("ID를 입력해주세요.(20자 이내)");
+		scanf("%s", newId);
+		printf("PassWord를 입력해주세요.(20자 이내)");
+		scanf("%s", newPass);
+
+		send(sock, newId, sizeof(newId), 0);
+		send(sock, newPass, sizeof(newPass), 0);
+
+		recvn(sock, &loginBuf, sizeof(char), 0);
+
+		isLogin = loginBuf;
+		if (!isLogin)
+			exit(0);
+	}
 	// 로그인 패킷 만들기
 	LoginPack loginPack;
 
@@ -287,9 +321,9 @@ int main(int argc, char *argv[])
 	}
 	printf("[UDP] %d바이트를 보냈습니다.\n", retval);
 
+	system("cls");
+
 	// 게임 클라이언트 준비
-	string name = "Alchemy";
-	
 	Message message;
 
 	GamePack gamePack;
